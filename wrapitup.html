@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<!--
+    Hyperspace by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>DidierVer Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/projects.css" />
+    <link rel="stylesheet" href="assets/css/github-dark-dimmed.min.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Sidebar -->
+    <section id="sidebar">
+        <div class="inner">
+            <nav>
+                <ul>
+                    <li><a href="index.html#one">Terug</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Intro -->
+        <section id="intro" class="wrapper style1 fade-up">
+            <div class="inner">
+                <div id="wrapitupimage" class="project-image">
+
+                </div>
+                <h1>Wrap-It-Up</h1>
+                <p class="big-text">
+                    Wrap-It-Up is een Overcooked geïnspireerd kerstmis spel waarbij het jouw taak is om zoveel mogelijk cadeautjes te maken voor de kinderen binnen de tijd. 
+                    Dit moet je doen door de spullen die nodig zijn voor de cadeaus te verzamelen, het cadeau te bouwen, daarna te schilderen en als laatste inpakken en verzenden.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Een -->
+        <section class="wrapper style1-gradient-br fade-up">
+            <div class="inner">
+                <!-- Ik wil class="flex" hier hebben zodat het er mooier uitziet, maar door de flex gaat de text raar doen als ik het scherm van grootte verander-->
+                <div class="flex">
+                    <div class="mr">
+                        <h2>Korte Info:</h2>
+                        <ul>
+                            <li>Gemaakt met: Unity</li>
+                            <li>Codeertaal: C#</li>
+                            <li>Mijn rollen: Developer / Sound Design / Artist</li>
+                            <li>Tijdspan: 2 weken</li>
+                        </ul>
+                        <h2>Team:</h2>
+                        <ul>
+                            <p>Developers:</p>
+                            <li>Justin van Diggelen</li>
+                            <li>Jipp Jansen</li>
+                            <li>Didier Vermunt</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-XDvH1AEEfA?si=-rYPoANe0EpudcAV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Twee -->
+        <section>
+            <section class="wrapper style2-gradient-bl fade-up">
+                <div class="inner">
+                    <div>
+                        <h2>Mijn Bijdragen: </h2>
+                        <div class="flex">
+                            <div>
+                                <h3>Design Documents: </h3>
+                                <p class="small-text">Voor dit project hebben we een paar design documents gemaakt zodat we een goed idee hadden wat het visie 
+                                    van het spel werd en we richtlijnen hadden voor bepaalde functionaliteiten die we in het spel wouden hebben</p>
+                            </div>
+                            <div class="accordion_box">
+                                <a  class="img" id="wrapituptech" href="assets/css/images/WrapItUp_TechDesign.jpeg" data-lightbox="image-1" data-title="Technical Design"></a>
+                                <a  class="img" id="wrapitupplayer" href="assets/css/images/WrapItUp_PlayerInteractAndMoveDesign.jpeg" data-lightbox="image-1" data-title="Technical Design"></a>
+                                <a  class="img" id="wrapitupmap" href="assets/css/images/WrapItUp_MapDesigns.jpeg" data-lightbox="image-1" data-title="Technical Design"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="wrapper style2-alt-gradient-br fade-up">
+                <div class="inner">
+                    <div class="flex">
+                        <div class="mr">
+                            <pre><code class="language-csharp scrollable-code">
+public class AntiRollBar : MonoBehaviour
+{
+    [SerializeField] private WheelCollider _leftWheel;
+    [SerializeField] private WheelCollider _rightWheel;
+    [SerializeField] private float _antiRoll = 5000f;
+    [SerializeField] private Rigidbody _rb;
+
+    private void FixedUpdate()
+    {
+        WheelHit Hit;
+        float TravelL = 1.0f;
+        float TravelR = 1.0f;
+
+        var GroundedL = _leftWheel.GetGroundHit(out Hit);
+        if (GroundedL)
+            TravelL = (-_leftWheel.transform.InverseTransformPoint(Hit.point).y - _leftWheel.radius) / _leftWheel.suspensionDistance;
+
+        var GroundedR = _rightWheel.GetGroundHit(out Hit);
+        if (GroundedL)
+            TravelR = (-_rightWheel.transform.InverseTransformPoint(Hit.point).y - _rightWheel.radius) / _rightWheel.suspensionDistance;
+
+        float AntiRollForce = (TravelL - TravelR) * _antiRoll;
+
+        if(GroundedL)
+            _rb.AddForceAtPosition(_leftWheel.transform.up * -AntiRollForce, _leftWheel.transform.position);
+
+        if (GroundedR)
+            _rb.AddForceAtPosition(_rightWheel.transform.up * -AntiRollForce, _rightWheel.transform.position);
+    }
+}
+                    </code></pre>
+                        </div>
+                        <div>
+                            <h3>AntiRollBars: </h3>
+                            <p class="small-text">We merkte dat de auto toch nog best onstabiel was. Na wat research was ik achter de Anti-Roll Bars gekomen wat een echte auto ook heeft. Deze stangen zorgen ervoor dat de auto’s stabiliteit flink verbeterd, vooral tijdens het nemen van bochten.</p>
+                            <div id="spacetripantirollbars"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="wrapper style2-gradient-br fade-up">
+                <div class="inner">
+                    <div class="flex">
+                        <div>
+                            <h3>Save en Load Data: </h3>
+                            <p class="small-text">Als een ‘nice to have’ heb ik nog wat Save en Load Data gemaakt. Dit wordt opgeslagen in een encrypted JSON file. In eerste instatie wouden we het met een Binary Formatter doen, maar aangezien de grootte van het project en de tijd die we hadden hebben we voor dit gekozen.</p>
+                            <!-- !!!!! VUL HIER NOG EEN GIF AAN TOE !!!!! -->
+                            <div class="mr"id="spacetriptimes"></div>
+                        </div>
+                        <div class="mr">
+                            <pre><code class="language-csharp two-scrollable-codes">
+    [Serializable]
+    public class TimerData
+    {
+        public float RaceTime;
+        public float Highscore;
+        public List<float> Laps = new List<float>();
+
+        public TimerData(HudManager times)
+        {
+            RaceTime = times.RaceTime;
+            Laps = times.LapList;
+            Highscore = times.HighScore;
+        }
+
+        public TimerData()
+        {
+
+        }
+    }
+</code></pre>
+                        </div>
+                        <div>
+                            <pre><code class="language-csharp two-scrollable-codes">
+    public static class SaveLoad
+    {
+        public static TimerData Current;
+        private readonly static string _directory = Path.Combine(Application.persistentDataPath, "SpaceTripSaves.json");
+
+        public static void Save()
+        {
+            string Json = JsonUtility.ToJson(Current);
+            byte[] Bytes = ProtectedData.Protect(Encoding.ASCII.GetBytes(Json), null, DataProtectionScope.CurrentUser);
+            File.WriteAllBytes(_directory, Bytes);
+        }
+
+        public static void Load()
+        {
+            if (File.Exists(_directory))
+            {
+                byte[] bytes = File.ReadAllBytes(_directory);
+                var Des = ProtectedData.Unprotect(bytes, null, DataProtectionScope.CurrentUser);
+                string Json = Encoding.ASCII.GetString(Des);
+                Current = JsonUtility.FromJson<TimerData>(Json);
+            }
+        }
+    }
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style1-alt">
+        <div class="inner">
+            <ul class="menu">
+                <li>&copy; DidierVermunt. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>Font: <a href="https://fonts.google.com/specimen/REM">Google Fonts</a></li>
+						<li>Icons: <a href="https://www.svgrepo.com/">SVGREPO</a> & <a href="https://fontawesome.com/">FontAwesome</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/highlight.min.js"></script>
+    <script src="assets/js/csharp.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
