@@ -68,7 +68,7 @@
                         </ul>
                     </div>
                     <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-XDvH1AEEfA?si=-rYPoANe0EpudcAV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Qzq87frkyaM?si=UTnp_8uDpHlpciuY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -88,8 +88,8 @@
                             </div>
                             <div class="accordion_box">
                                 <a  class="img" id="wrapituptech" href="assets/css/images/WrapItUp_TechDesign.jpeg" data-lightbox="image-1" data-title="Technical Design"></a>
-                                <a  class="img" id="wrapitupplayer" href="assets/css/images/WrapItUp_PlayerInteractAndMoveDesign.jpeg" data-lightbox="image-1" data-title="Technical Design"></a>
-                                <a  class="img" id="wrapitupmap" href="assets/css/images/WrapItUp_MapDesigns.jpeg" data-lightbox="image-1" data-title="Technical Design"></a>
+                                <a  class="img" id="wrapitupplayer" href="assets/css/images/WrapItUp_PlayerInteractAndMoveDesign.jpeg" data-lightbox="image-1" data-title="Player Interact and Movement Design"></a>
+                                <a  class="img" id="wrapitupmap" href="assets/css/images/WrapItUp_MapDesigns.jpeg" data-lightbox="image-1" data-title="Map Design"></a>
                             </div>
                         </div>
                     </div>
@@ -100,43 +100,11 @@
                 <div class="inner">
                     <div class="flex">
                         <div class="mr">
-                            <pre><code class="language-csharp scrollable-code">
-public class AntiRollBar : MonoBehaviour
-{
-    [SerializeField] private WheelCollider _leftWheel;
-    [SerializeField] private WheelCollider _rightWheel;
-    [SerializeField] private float _antiRoll = 5000f;
-    [SerializeField] private Rigidbody _rb;
-
-    private void FixedUpdate()
-    {
-        WheelHit Hit;
-        float TravelL = 1.0f;
-        float TravelR = 1.0f;
-
-        var GroundedL = _leftWheel.GetGroundHit(out Hit);
-        if (GroundedL)
-            TravelL = (-_leftWheel.transform.InverseTransformPoint(Hit.point).y - _leftWheel.radius) / _leftWheel.suspensionDistance;
-
-        var GroundedR = _rightWheel.GetGroundHit(out Hit);
-        if (GroundedL)
-            TravelR = (-_rightWheel.transform.InverseTransformPoint(Hit.point).y - _rightWheel.radius) / _rightWheel.suspensionDistance;
-
-        float AntiRollForce = (TravelL - TravelR) * _antiRoll;
-
-        if(GroundedL)
-            _rb.AddForceAtPosition(_leftWheel.transform.up * -AntiRollForce, _leftWheel.transform.position);
-
-        if (GroundedR)
-            _rb.AddForceAtPosition(_rightWheel.transform.up * -AntiRollForce, _rightWheel.transform.position);
-    }
-}
-                    </code></pre>
+                            <div id="wrapitupassets"></div>
                         </div>
                         <div>
-                            <h3>AntiRollBars: </h3>
-                            <p class="small-text">We merkte dat de auto toch nog best onstabiel was. Na wat research was ik achter de Anti-Roll Bars gekomen wat een echte auto ook heeft. Deze stangen zorgen ervoor dat de auto’s stabiliteit flink verbeterd, vooral tijdens het nemen van bochten.</p>
-                            <div id="spacetripantirollbars"></div>
+                            <h3>Assets en Models: </h3>
+                            <p class="small-text">Omdat we geen artist hadden maar alleen developers had ik het op me genomen om alle art en models te zoeken/maken. Alle models zijn opgezocht, maar de sprites heb ik zelf gemaakt of aangepast.</p>
                         </div>
                     </div>
                 </div>
@@ -145,60 +113,21 @@ public class AntiRollBar : MonoBehaviour
                 <div class="inner">
                     <div class="flex">
                         <div>
-                            <h3>Save en Load Data: </h3>
-                            <p class="small-text">Als een ‘nice to have’ heb ik nog wat Save en Load Data gemaakt. Dit wordt opgeslagen in een encrypted JSON file. In eerste instatie wouden we het met een Binary Formatter doen, maar aangezien de grootte van het project en de tijd die we hadden hebben we voor dit gekozen.</p>
-                            <!-- !!!!! VUL HIER NOG EEN GIF AAN TOE !!!!! -->
-                            <div class="mr"id="spacetriptimes"></div>
+                            <h3 class="mr">Audio: </h3>
+                            <p class="small-text">Voor onze game hebben we ook wat sound effects toegevoegd.</p>
                         </div>
-                        <div class="mr">
-                            <pre><code class="language-csharp two-scrollable-codes">
-    [Serializable]
-    public class TimerData
-    {
-        public float RaceTime;
-        public float Highscore;
-        public List<float> Laps = new List<float>();
-
-        public TimerData(HudManager times)
-        {
-            RaceTime = times.RaceTime;
-            Laps = times.LapList;
-            Highscore = times.HighScore;
-        }
-
-        public TimerData()
-        {
-
-        }
-    }
-</code></pre>
-                        </div>
-                        <div>
-                            <pre><code class="language-csharp two-scrollable-codes">
-    public static class SaveLoad
-    {
-        public static TimerData Current;
-        private readonly static string _directory = Path.Combine(Application.persistentDataPath, "SpaceTripSaves.json");
-
-        public static void Save()
-        {
-            string Json = JsonUtility.ToJson(Current);
-            byte[] Bytes = ProtectedData.Protect(Encoding.ASCII.GetBytes(Json), null, DataProtectionScope.CurrentUser);
-            File.WriteAllBytes(_directory, Bytes);
-        }
-
-        public static void Load()
-        {
-            if (File.Exists(_directory))
-            {
-                byte[] bytes = File.ReadAllBytes(_directory);
-                var Des = ProtectedData.Unprotect(bytes, null, DataProtectionScope.CurrentUser);
-                string Json = Encoding.ASCII.GetString(Des);
-                Current = JsonUtility.FromJson<TimerData>(Json);
-            }
-        }
-    }
-</code></pre>
+                        <div class="ml">
+                            <audio controls><source src= "assets/css/Audio/Accept.wav" type="audio/wav"></audio>
+                            <audio controls><source src = "assets/css/Audio/Completed.wav" type="audio/wav"></audio>
+                            <audio controls><source src = "assets/css/Audio/CorrectItem.wav" type="audio/wav"></audio>
+                            <audio controls><source src = "assets/css/Audio/CountDownSound.mp3" type="audio/mpeg"></audio>
+                            <audio controls><source src = "assets/css/Audio/Dash.wav" type="audio/wav"></audio>
+                            <audio controls><source src = "assets/css/Audio/Painting.wav" type="audio/wav"></audio>
+                            <audio controls><source src = "assets/css/Audio/Select.wav" type="audio/wav"></audio>
+                            <audio controls><source src = "assets/css/Audio/Warning.mp3" type="audio/mpeg"></audio>
+                            <audio controls><source src = "assets/css/Audio/WorkBench.wav" type="audio/wav"></audio>
+                            <audio controls><source src = "assets/css/Audio/Wrapping.wav" type="audio/wav"></audio>
+                            <audio controls><source src = "assets/css/Audio/WrongItem.mp3" type="audio/mpeg"></audio>
                         </div>
                     </div>
                 </div>
