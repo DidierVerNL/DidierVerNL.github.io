@@ -134,13 +134,13 @@ public class NewCarController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Steering
+        // Steering
         _currentTurnAngle = _maxTurnAngle * _inputX;
         _frontLeft.steerAngle = _currentTurnAngle;
         _frontRight.steerAngle = _currentTurnAngle;
 
 
-        //Brakes
+        // Brakes
         if (Input.GetKey(KeyCode.Space))
             _currentBreakingForce = _breakingForce;
         else
@@ -148,19 +148,17 @@ public class NewCarController : MonoBehaviour
 
         ApplyForceToWheels();
 
-        //Apply the breaking force to all of the wheels
+        // Apply the breaking force to all of the wheels
         _frontLeft.brakeTorque = _currentBreakingForce;
         _frontRight.brakeTorque = _currentBreakingForce;
         _rearLeft.brakeTorque = _currentBreakingForce;
         _rearRight.brakeTorque = _currentBreakingForce;
 
-        //Update Wheel Meshes
+        // Update Wheel Meshes
         UpdateWheel(_frontLeft, _frontLeftTransform);
         UpdateWheel(_frontRight, _frontRightTransform);
         UpdateWheel(_rearLeft, _rearLeftTransform);
         UpdateWheel(_rearRight, _rearRightTransform);
-
-        //print(_frontLeft.rpm);
     }
 
     /// &ltsummary&gt
@@ -170,12 +168,12 @@ public class NewCarController : MonoBehaviour
     /// &ltparam name="Trans"&gt&lt/param&gt
     private void UpdateWheel(WheelCollider Coll, Transform Trans)
     {
-        //Get Wheel Collider state
+        // Get Wheel Collider state
         Vector3 position;
         Quaternion rotation;
         Coll.GetWorldPose(out position, out rotation);
 
-        //Set Wheel Transform state
+        // Set Wheel Transform state
         Trans.position = position;
         Trans.rotation = rotation;
     }
@@ -189,15 +187,14 @@ public class NewCarController : MonoBehaviour
     private void ApplyForceToWheels()
     {
         _currentSpeed = _rb.velocity.sqrMagnitude;
-        //Debug.Log(_currentSpeed + " | " + _maxSpeed);
         if(_currentSpeed < 0f)
             _currentSpeed = 0f;
         if (_currentSpeed < _maxSpeed)
         {
-            //Go forward or backward (W key/S key)
+            // Go forward or backward (W key/S key)
             _currentAcceleration = _acceleration * _inputY;
 
-            //Apply the acceleration on the 2 front wheels
+            // Apply the acceleration on the 2 front wheels
             _frontLeft.motorTorque = _currentAcceleration;
             _frontRight.motorTorque = _currentAcceleration;
 
@@ -239,7 +236,8 @@ public class AntiRollBar : MonoBehaviour
         WheelHit Hit;
         float TravelL = 1.0f;
         float TravelR = 1.0f;
-
+        
+        // Check the travel distance between de wheel and the ground
         var GroundedL = _leftWheel.GetGroundHit(out Hit);
         if (GroundedL)
             TravelL = (-_leftWheel.transform.InverseTransformPoint(Hit.point).y - _leftWheel.radius) / _leftWheel.suspensionDistance;
@@ -250,7 +248,8 @@ public class AntiRollBar : MonoBehaviour
 
         float AntiRollForce = (TravelL - TravelR) * _antiRoll;
 
-        if(GroundedL)
+        // Add extra force to keep the wheels on the ground
+        if (GroundedL)
             _rb.AddForceAtPosition(_leftWheel.transform.up * -AntiRollForce, _leftWheel.transform.position);
 
         if (GroundedR)
@@ -304,6 +303,7 @@ public class AntiRollBar : MonoBehaviour
     public static class SaveLoad
     {
         public static TimerData Current;
+        // Game file path
         private readonly static string _directory = Path.Combine(Application.persistentDataPath, "SpaceTripSaves.json");
 
         public static void Save()
