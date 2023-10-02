@@ -84,6 +84,11 @@ p + li{
     width: 600px;
 }
 
+#urgimage{
+    background-image: url("images/urgphoto.png");
+    background-size: cover;
+}
+
 .project-image {
     height: 200px;
     width: 200px;
