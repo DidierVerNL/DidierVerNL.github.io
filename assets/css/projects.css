@@ -88,6 +88,31 @@ p + li{
     background-image: url("images/urgphoto.png");
     background-size: cover;
 }
+#urgvelocity{
+    background-image: url("images/URG_Velocity.gif");
+    background-size: cover;
+    height: 204px;
+    width: 360px;
+}
+#urgspline{
+    background-image: url("images/URG_SplineGIF.gif");
+    background-size: cover;
+    height: 204px;
+    width: 360px;
+}
+#urgsplinephoto{
+    background-image: url("images/URG_Spline.jpeg");
+    background-size: cover;
+    height: 204px;
+    width: 360px;
+}
+#urgdeath{
+    background-image: url("images/URG_Death.gif");
+    background-size: cover;
+    height: 204px;
+    width: 360px;
+}
+
 
 .project-image {
     height: 200px;
