@@ -152,6 +152,33 @@ p + li{
     width: 360px;
 }
 
+#magicarea{
+    background-image: url("images/Magic_Melee_Areas.png");
+    background-size: cover;
+    height: 204px;
+    width: 460px;
+}
+#magiccount{
+    background-image: url("images/Magic_Melee_Count.png");
+    background-size: cover;
+    height: 204px;
+    width: 1200px;
+}
+#magicdata{
+    background-image: url("images/Magic_Melee_Database.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 700px;
+}
+#magicold{
+    background-image: url("images/Magic_Melee_OldConnect.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 700px;
+}
+
 
 .project-image {
     height: 200px;
@@ -2045,7 +2072,7 @@ button,
     height: calc(4.75em + 2px);
     letter-spacing: 0.25em;
     outline: 0;
-    padding: 0 3.75em;
+    padding: 0 2.5em;
     position: relative;
     text-align: center;
     text-decoration: none;

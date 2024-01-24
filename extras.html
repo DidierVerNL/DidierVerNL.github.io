@@ -68,6 +68,7 @@
                             <a href="#klim"><button class="buttonunityvr">Klimbos</button></a>
                             <a href="#morse"><button class="buttonandroidmobile">Morse Code Learn</button></a>
                             <a href="#pac"><button class="buttonunrealpc">Pac Man</button></a>
+                            <a href="#magic"><button class="buttonunitypc">Magic Melee</button></a>
                         </div>
                     </div>
                 </div>
@@ -93,6 +94,118 @@
                         naar een spiegel dimensie. Ook zijn er andere auto's die tegen je strijden.
                     </p>
                 </div>
+            </section>
+            <section id="magic" class="wrapper style2-alt-gradient-br fade-up">
+                <div class="inner">
+                    <div class="flex">
+                    </div>
+                    <h1>Magic Melee</h1>
+                    <p class="big-text">
+                        Voor een school project hebben ik en 5 andere voor 8 weken een game gemaakt voor een arcade kast die ook op Itch.io geplaatst moest worden. In deze game is het de bedoeling dat je monsters
+                        versla met je blote vuisten.
+                    </p>
+                    <div class="flex">
+                    <div class="mr">
+                        <h2>Korte Info:</h2>
+                        <ul>
+                            <li>Gemaakt met: Unity</li>
+                            <li>Codeertaal: C#</li>
+                            <li>Mijn rollen: Project Lead, Developer</li>
+                         <li>Tijdspan: 8 weken</li>
+                      </ul>
+                        <h2>Team:</h2>
+                        <ul>
+                            <p>Developers:</p>
+                         <li>Didier Vermunt</li>
+                        <li>Kenan Özbakan</li>
+                            <p ></p>
+                             <p>Artist:</p>
+                         <li>Henk Onstenk</li>
+                         <li>Demi Zwiersh</li>
+                         <li>Aaliyah Sandvliet</li>
+                        <li>Sam van Beest</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BFdZueM_8SQ?si=4dxfiMti6-S3_asy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <h2>Mijn Bijdragen: </h2>
+                        <div class="flex">
+                            <div>
+                                <h3>Random Generated Area's: </h3>
+                                <p class="small-text">In ons spel ga je door verschillende area's, deze moesten ingespawned worden, maar ze moesten wel op een specifieke volgorde.</p>
+                                <div class="flex">
+                                <div class="mr" id="magicarea"></div>
+                                <div class="mr" id="magicold"></div>
+                            </div>
+                                <p></p>
+                                <div class="" id="magiccount"></div>
+                                <p></p>
+                                <div class="flex">
+                                <div class="mr" id="magicdata"></div>
+                                <div>
+                                    <pre><code class="language-csharp scrollable-code">
+    [CreateAssetMenu(fileName = "Areas", menuName = "ScriptableObjects/AreaDatabase", order = 1)]
+    public class AreaDatabase : ScriptableObject
+    {
+        [SerializeField] private AreaSO[] Areas;
+    
+        /// <summary>
+        /// Indexer
+        /// </summary>
+        /// <inheritdoc cref="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/using-indexers"/>
+        public AreaSO this[int index] => Areas[index];
+    
+        public int AreaCount => Areas.Length;
+    
+        /// <summary>
+        /// Try Get, based on dictionary implementation
+        /// </summary>
+        /// <inheritdoc cref="https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2.trygetvalue?view=net-8.0"/>
+        public bool TryGetArea(string pName, out AreaSO pResult)
+        {
+            pResult = null;
+            if (Areas == null) return false;
+            if (Areas.Length <= 0) return false;
+    
+            for (int i = 0; i < Areas.Length; i++)
+            {
+                if (Areas[i].Name != pName) continue;
+    
+                pResult = Areas[i];
+                return true;
+            }
+    
+            return false;
+        }
+    
+        /// <summary>
+        /// Try Get, based on dictionary implementation
+        /// </summary>
+        /// <inheritdoc cref="https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2.trygetvalue?view=net-8.0"/>
+        public bool TryGetArea(int pIndex, out AreaSO pResult)
+        {
+            pResult = null;
+            if (Areas == null) return false;
+            if (Areas.Length <= 0) return false;
+    
+            for (int i = 0; i < Areas.Length; i++)
+            {
+                if (Areas[i].Index != pIndex) continue;
+    
+                pResult = Areas[i];
+                return true;
+            }
+    
+            return false;
+        }
+    }
+                        </code></pre>
+                                </div>
+                            </div>
+                </div>
+            </div>
             </section>
         </section>
 
