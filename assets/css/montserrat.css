@@ -44,9 +44,9 @@
 
 @font-face {
   font-family: 'Montserrat-Variable';
-  src: url('../fonts/Montserrat-Variable.woff2') format('woff2'),
-       url('../fonts/Montserrat-Variable.woff') format('woff'),
-       url('../fonts/Montserrat-Variable.ttf') format('truetype');
+  src: url('/assets/fonts/Montserrat-Variable.woff2') format('woff2'),
+       url('/assets/fonts/Montserrat-Variable.woff') format('woff'),
+       url('/assets/fonts/Montserrat-Variable.ttf') format('truetype');
        font-weight: 100 900;
        font-display: swap;
        font-style: normal;
@@ -66,9 +66,9 @@
 
 @font-face {
   font-family: 'Montserrat-VariableItalic';
-  src: url('../fonts/Montserrat-VariableItalic.woff2') format('woff2'),
-       url('../fonts/Montserrat-VariableItalic.woff') format('woff'),
-       url('../fonts/Montserrat-VariableItalic.ttf') format('truetype');
+  src: url('/assets/fonts/Montserrat-VariableItalic.woff2') format('woff2'),
+       url('/assets/fonts/Montserrat-VariableItalic.woff') format('woff'),
+       url('/assets/fonts/Montserrat-VariableItalic.ttf') format('truetype');
        font-weight: 100 900;
        font-display: swap;
        font-style: italic;
@@ -77,9 +77,9 @@
 
 @font-face {
   font-family: 'Montserrat-Thin';
-  src: url('../fonts/Montserrat-Thin.woff2') format('woff2'),
-       url('../fonts/Montserrat-Thin.woff') format('woff'),
-       url('../fonts/Montserrat-Thin.ttf') format('truetype');
+  src: url('/assets/fonts/Montserrat-Thin.woff2') format('woff2'),
+       url('/assets/fonts/Montserrat-Thin.woff') format('woff'),
+       url('/assets/fonts//Montserrat-Thin.ttf') format('truetype');
        font-weight: 100;
        font-display: swap;
        font-style: normal;
@@ -88,9 +88,9 @@
 
 @font-face {
   font-family: 'Montserrat-ThinItalic';
-  src: url('../fonts/Montserrat-ThinItalic.woff2') format('woff2'),
-       url('../fonts/Montserrat-ThinItalic.woff') format('woff'),
-       url('../fonts/Montserrat-ThinItalic.ttf') format('truetype');
+  src: url('/assets/fonts/Montserrat-ThinItalic.woff2') format('woff2'),
+       url('/assets/fonts/Montserrat-ThinItalic.woff') format('woff'),
+       url('/assets/fonts/Montserrat-ThinItalic.ttf') format('truetype');
        font-weight: 100;
        font-display: swap;
        font-style: italic;
