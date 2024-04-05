@@ -188,3 +188,11 @@
 			});
 
 })(jQuery);
+
+const locale = (navigator.language || navigator.userLanguage).toLowerCase();
+
+if (locale.startsWith('en')) {
+	tinyi18n.setLang('en');
+} else if(locale.startsWith('nl')){
+	tinyi18n.setLang('nl');
+}
