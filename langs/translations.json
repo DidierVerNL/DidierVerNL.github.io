@@ -1,18 +1,18 @@
 {
-	"default_language": "en",
-	"languages": ["en", "es"],
+	"default_language": "nl",
+	"languages": ["en", "nl"],
 	"translations": {
 		"title": {
 			"en": "Title in English",
-			"es": "Título en Inglés"
+			"nl": "Titel in het Nederlands"
 		},
 		"description": {
 			"en": "I like cats",
-			"es": "Me gustan los gatos"
+			"nl": "Ik vind katten leuk"
 		},
 		"searchbox": {
 			"en": "search",
-			"es": "buscar"
+			"nl": "zoeken"
 		}
 	}
 }
