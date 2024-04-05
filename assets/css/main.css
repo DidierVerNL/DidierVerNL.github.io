@@ -53,14 +53,14 @@ section, summary, time, mark, audio, video {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	
+
 }
-.imagebox { 
+.imagebox {
 	position: relative;
 	height: 250px;
 	width: 250px;
-	float: middle; 
-	margin: 10px;                  
+	float: middle;
+	margin: 10px;
 }
 .imagebox img {
 	vertical-align: middle;
@@ -71,7 +71,7 @@ section, summary, time, mark, audio, video {
 	width:100%;
 	height:100%;
 	background:#06547f;
-	opacity:0;   
+	opacity:0;
 	position: absolute;
 	text-align: center;
 	left: 0;
@@ -81,7 +81,7 @@ section, summary, time, mark, audio, video {
 	transition: .5s ease;
 }
 .imagebox:hover .caption
-{ 
+{
 	opacity: 0.8;
 	text-align:center;
 	color:#ffff7b;
@@ -3392,7 +3392,6 @@ input, select, textarea {
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			min-height: 100vh;
 		}
 
 			body.is-ie .wrapper.fullscreen {
