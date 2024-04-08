@@ -95,7 +95,7 @@
                             </ul>
                             <h2>Team:</h2>
                             <ul>
-                                <p>Developers:</p>
+                                <p><strong>Developers:</strong></p>
                                 <li>Akari Le</li>
                                 <li>Aria Fadaei</li>
                                 <li>Didier Vermunt</li>
@@ -103,13 +103,14 @@
                                 <li>Matthijs van den Bovenkamp</li>
                                 <li>Miyaki Truong</li>
                                 <p></p>
-                                <p>Artist:</p>
+                                <p><strong>Artist:</strong></p>
                                 <li>Lara Gommers</li>
                                 <li>Levi Cok</li>
                             </ul>
                         </div>
                         <div>
                             <iframe
+                                loading="lazy"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/4YdOkJ1ZWn8?si=qJ0dbdSpnqiAxCz6"
@@ -150,6 +151,7 @@
                                 </div>
                                 <div>
                                     <iframe
+                                        loading="lazy"
                                         width="650"
                                         height="650"
                                         src="https://blueprintue.com/render/x1949ha5/"
@@ -168,6 +170,7 @@
                         <div class="flex">
                             <div class="mr">
                                 <iframe
+                                    loading="lazy"
                                     width="650"
                                     height="650"
                                     src="https://blueprintue.com/render/nzgolctw/"
@@ -209,10 +212,14 @@
                                     blokjes te zien, opnieuw proberen of terug
                                     naar het start menu.
                                 </p>
-                                <div class="mr" id="urgdeath"></div>
+                                <div
+                                    class="mr lazyload-gif"
+                                    data-src="assets/css/images/URG_Death.gif"
+                                ></div>
                             </div>
                             <div class="mr">
                                 <iframe
+                                    loading="lazy"
                                     width="400"
                                     height="650"
                                     src="https://blueprintue.com/render/durmmu_d/"
@@ -222,6 +229,7 @@
                             </div>
                             <div>
                                 <iframe
+                                    loading="lazy"
                                     width="400"
                                     height="650"
                                     src="https://blueprintue.com/render/lga7tc53/"
@@ -262,11 +270,16 @@
         <script src="assets/js/browser.min.js"></script>
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
+
         <script src="assets/js/highlight.min.js"></script>
         <script src="assets/js/csharp.min.js"></script>
+        <script src="assets/js/tinyi18n.js"></script>
+        <script>
+            tinyi18n.loadTranslations("langs/translations.json");
+        </script>
         <script>
             hljs.initHighlightingOnLoad();
         </script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>

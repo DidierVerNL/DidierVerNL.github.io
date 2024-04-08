@@ -171,6 +171,12 @@ p + li {
     color: white;
 }
 
+.lazyload-gif {
+    background-size: cover;
+    height: 204px;
+    width: 360px;
+}
+
 .big-text {
     font-size: xx-large;
     font-weight: bold;
@@ -243,12 +249,6 @@ p + li {
 }
 #urgsplinephoto {
     background-image: url("images/URG_Spline.jpeg");
-    background-size: cover;
-    height: 204px;
-    width: 360px;
-}
-#urgdeath {
-    background-image: url("images/URG_Death.gif");
     background-size: cover;
     height: 204px;
     width: 360px;
@@ -3565,7 +3565,7 @@ table.alt tfoot {
 }
 
 .wrapper.style1 {
-    background-color: #40a9b0;
+    background-color: #262626;
 }
 
 .wrapper.style1-alt {
