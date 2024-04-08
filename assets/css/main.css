@@ -24,7 +24,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	color: #ffff7b;
+	color: #ffffff;
 	vertical-align: baseline;
 	font-family: 'Montserrat-Medium';
 }
@@ -32,21 +32,21 @@ section, summary, time, mark, audio, video {
 .text-black {
     color: #000000;
 }
-.text-white {
-    color: #FFFFFF;
+.text-yellow {
+    color: #d9d94a;
 }
 
 .button-fill {
-	position: relative;
-  overflow: hidden;
-  height: 3rem;
-  padding: 0 2rem;
-  border-radius: 1.5rem;
-  background: #3d3a4e;
-  background-size: 400%;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 .button-fill:hover::before{
 	transform: scaleX(1);
@@ -98,37 +98,24 @@ section, summary, time, mark, audio, video {
 
 }
 
-.imagebox-container {
-
+.big-image {
+    flex: 0 0 auto;
+    margin-right: 20px;
 }
-
+.project-content{
+    flex-grow: 1;
+}
+.project-content p {
+    margin: 0;
+}
 .imagebox {
-	position: relative;
-	height: 250px;
-	width: 250px;
-	margin: 10px;
-	text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .imagebox img {
-	height: 250px;
-	width: 250px;
+	height: auto;
+	max-width: 100%;
   }
-.caption{
-	width:100%;
-	height:100%;
-	background:#06547f;
-	opacity:0;
-	position: absolute;
-	text-align: center;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	transition: .5s ease;
-}
 
 
 .textoutline{
@@ -335,7 +322,6 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #ffffff;
 		font-weight: bold;
 	}
 
@@ -348,7 +334,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffff94;
+		color: #ffffff;
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
@@ -3412,11 +3398,11 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #40A9B0;
+			background-color: #C6C6C6;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #31848A;
+			background-color: #000000;
 		}
 
 		.wrapper.style2 {
@@ -3428,7 +3414,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #5A49BE;
+			background-color: #130f24;
 		}
 
 		.wrapper.style3-alt {
