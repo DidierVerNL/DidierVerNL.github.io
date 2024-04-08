@@ -106,7 +106,7 @@ section, summary, time, mark, audio, video {
     flex-grow: 1;
 }
 .project-content p {
-    margin: 0;
+    margin: 20px 0;
 }
 .imagebox {
     display: flex;
@@ -3406,7 +3406,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #AFCFE1;
+			background-color: #EFF9FF;
 		}
 
 		.wrapper.style2-alt {
