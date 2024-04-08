@@ -108,6 +108,25 @@ section, summary, time, mark, audio, video {
 	float:initial;
 }
 
+#dutch {
+	background-image: url("images/nl.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 50px;
+	border-radius: 20%;
+	padding: 0px;
+}
+#english {
+	background-image: url("images/uk.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 50px;
+	border-radius: 20%;
+	padding: 0px;
+}
+
 #unity {
 	background-image: url("icons/Unity.svg");
 	background-size: 30px 30px;
