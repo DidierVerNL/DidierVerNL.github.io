@@ -1,167 +1,297 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <!--
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>DidierVer Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=REM&display=swap" rel="stylesheet">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="https://kit.fontawesome.com/2903ea4522.js" crossorigin="anonymous"></script>
-		<script src="https://unpkg.com/@phosphor-icons/web"></script>
-	</head>
-	<body class="is-preload">
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a data-translatekey="sidebar_welcome" href="#intro"></a></li>
-							<li><a data-translatekey="sidebar_projects" href="#one"></a></li>
-							<li><a data-translatekey="sidebar_skills" href="#two"></a></li>
-							<li><a data-translatekey="sidebar_contact" href="#three"></a></li>
-						</ul>
-						<button id="english" onclick="tinyi18n.setLang('en')"></button>
-						<button id="dutch" onclick="tinyi18n.setLang('nl')"></button>
-					</nav>
-				</div>
-			</section>
+    <head>
+        <title>DidierVer Portfolio</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=REM&display=swap"
+            rel="stylesheet"
+        />
+        <noscript
+            ><link rel="stylesheet" href="assets/css/noscript.css"
+        /></noscript>
+        <script
+            src="https://kit.fontawesome.com/2903ea4522.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    </head>
+    <body class="is-preload">
+        <!-- Sidebar -->
+        <section id="sidebar">
+            <div class="inner">
+                <nav>
+                    <ul>
+                        <li>
+                            <a
+                                data-translatekey="sidebar_welcome"
+                                href="#intro"
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                data-translatekey="sidebar_projects"
+                                href="#one"
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                data-translatekey="sidebar_skills"
+                                href="#two"
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                data-translatekey="sidebar_contact"
+                                href="#three"
+                            ></a>
+                        </li>
+                    </ul>
+                    <button
+                        id="english"
+                        onclick="tinyi18n.setLang('en')"
+                    ></button>
+                    <button
+                        id="dutch"
+                        onclick="tinyi18n.setLang('nl')"
+                    ></button>
+                </nav>
+            </div>
+        </section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <!-- Wrapper -->
+        <div id="wrapper">
+            <!-- Intro -->
+            <section id="intro" class="wrapper style1 fullscreen fade-up">
+                <div class="inner">
+                    <div id="heroImage"></div>
+                    <h1>Didier Vermunt</h1>
+                    <p class="big-text" data-translatekey="description"></p>
+                </div>
+            </section>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<div id="heroImage"></div>
-							<h1>Didier Vermunt</h1>
-							<p class="big-text" data-translatekey="description"></p>
-						</div>
-					</section>
-
-				<!-- One -->
-					<section id="one" class="wrapper style2 fade-up">
-						<div>
-							<div id="imagesMain" class="project-photos">
-								<a href="urg.html" class="image imagebox"><img src="images/urgphoto.png" alt="" data-position="center center" />
-									<div class="caption big-text">Untitled Rythm Game (URG) <p class="small-text">URG is een vr spel waarbij je op de maat van de muziek drones kapot moet slaan met je handen. Met verschillende liedjes is er voor elk wat wils.</p></div>
-								</a>
+            <!-- One -->
+            <section id="one" class="wrapper style2 fade-up">
+                <div class="inner">
+                    <h2>My projects</h2>
+                    <div>
+                        <div id="imagesMain" class="project-photos">
+                            <div class="image imagebox">
+                                <img
+                                    src="images/urgphoto.png"
+                                    alt=""
+                                    data-position="center center"
+                                />
+                                <div class="caption big-text"></div>
+                                <p>Untitled Rythm Game (URG)</p>
+                                <p class="small-text">
+                                    URG is een vr spel waarbij je op de maat van
+                                    de muziek drones kapot moet slaan met je
+                                    handen. Met verschillende liedjes is er voor
+                                    elk wat wils.
+                                </p>
+                                <div>
+                                    <button
+                                        onclick="window.location.href='urg.html'"
+                                        class="button-fill"
+                                    >
+                                        <span class="button-fill-content"
+                                            >URG</span
+                                        >
+                                    </button>
+                                </div>
+                            </div>
+                            <!--
 								<a href="wrapitup.html" class="image imagebox"><img src="images/wrapitupphoto.png" alt="" data-position="top center" />
 									<div class="caption big-text">Wrap-It-Up <p class="small-text">Oh nee! Er zijn niet genoeg cadeautjes gemaakt voor kerstmis. Jij en je vrienden moeten zo snel verschillende cadeau's maken voor de tijd om is.</p></div>
 								</a>
 								<a href="spacetrip.html" class="image imagebox"><img src="images/spacetripphoto.png" alt="" data-position="25% 25%" />
 									<div class="caption big-text">Space Trip <p class="small-text">Dit is een singleplayer race spel dat zich plaatst vind op een vreemde planeet. Kan jij de snelste score halen?</p></div>
 								</a>
-								<!--
+
 								<a href="extras.html" class="image imagebox"><img src="images/pic04.jpg" alt="" data-position="25% 25%" />
 									<div class="caption big-text">Extra's<p class="small-text">Dit zijn vele kleine (oefen) projecten die ik door de jaren heb gemaakt</p></div>
 								</a>
 								-->
-							</div>
-						</div>
-					</section>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Skills</h2>
-							<div class="features">
-								<section>
-									<h3 data-translatekey="skills_coding_title"></h3>
-									<ul>
-										<li data-translatekey="skills_coding_unity"></li>
-										<li data-translatekey="skills_coding_unreal"></li>
-									</ul>
-								</section>
-								<section>
-									<h3 data-translatekey="skills_agile_title"></h3>
-									<ul>
-										<li data-translatekey="skills_agile_scrum"></li>
-										<li data-translatekey="skills_agile_stand"></li>
-										<li data-translatekey="skills_agile_review"></li>
-									</ul>
-								</section>
-								<section>
-									<h3 data-translatekey="skills_version_control_title"></h3>
-									<ul>
-										<li data-translatekey="skills_version_control_github"></li>
-										<li data-translatekey="skills_version_control_gitlab"></li>
-										<li data-translatekey="skills_version_control_perforce"></li>
-									</ul>
-								</section>
-								<section>
-									<h3 data-translatekey="skills_extra_skills_title"></h3>
-									<ul>
-										<li data-translatekey="skills_extra_skills_solid"></li>
-										<li data-translatekey="skills_extra_skills_oop"></li>
-										<li data-translatekey="skills_extra_skills_html_css"></li>
-										<li data-translatekey="skills_extra_skills_paint"></li>
-									</ul>
-								</section>
-							</div>
-							<div>
+            <!-- Two -->
+            <section id="two" class="wrapper style3 fade-up">
+                <div class="inner">
+                    <h2>Skills</h2>
+                    <div class="features">
+                        <section>
+                            <h3 data-translatekey="skills_coding_title"></h3>
+                            <ul>
+                                <li
+                                    data-translatekey="skills_coding_unity"
+                                ></li>
+                                <li
+                                    data-translatekey="skills_coding_unreal"
+                                ></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3 data-translatekey="skills_agile_title"></h3>
+                            <ul>
+                                <li data-translatekey="skills_agile_scrum"></li>
+                                <li data-translatekey="skills_agile_stand"></li>
+                                <li
+                                    data-translatekey="skills_agile_review"
+                                ></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3
+                                data-translatekey="skills_version_control_title"
+                            ></h3>
+                            <ul>
+                                <li
+                                    data-translatekey="skills_version_control_github"
+                                ></li>
+                                <li
+                                    data-translatekey="skills_version_control_gitlab"
+                                ></li>
+                                <li
+                                    data-translatekey="skills_version_control_perforce"
+                                ></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3
+                                data-translatekey="skills_extra_skills_title"
+                            ></h3>
+                            <ul>
+                                <li
+                                    data-translatekey="skills_extra_skills_solid"
+                                ></li>
+                                <li
+                                    data-translatekey="skills_extra_skills_oop"
+                                ></li>
+                                <li
+                                    data-translatekey="skills_extra_skills_html_css"
+                                ></li>
+                                <li
+                                    data-translatekey="skills_extra_skills_paint"
+                                ></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div></div>
+                </div>
+            </section>
 
-							</div>
-						</div>
-					</section>
+            <!-- Three -->
+            <section id="three" class="wrapper style1 fade-up">
+                <div class="inner">
+                    <h2 data-translatekey="contact_title"></h2>
+                    <p data-translatekey="contact_description"></p>
+                    <div>
+                        <section>
+                            <ul class="contact">
+                                <li>
+                                    <h3 data-translatekey="contact_mail"></h3>
+                                    <!-- Verander dit adres naar het contact adres -->
+                                    <a
+                                        href="mailto:didiervermunt@gmail.com"
+                                        title="didiervermunt@gmail.com"
+                                        class="ph ph-envelope-simple"
+                                    >
+                                    </a>
+                                </li>
+                                <li>
+                                    <h3
+                                        data-translatekey="contact_socials"
+                                    ></h3>
+                                    <ul class="icons">
+                                        <li>
+                                            <a
+                                                href="https://twitter.com/didier_vermunt"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                class="ph ph-twitter-logo"
+                                                ><span class="label"
+                                                    >Twitter</span
+                                                ></a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://github.com/DidierVerNL"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                class="ph ph-github-logo"
+                                                ><span class="label"
+                                                    >GitHub</span
+                                                ></a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://www.linkedin.com/in/didier-vermunt-31895623a"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                class="ph-fill ph-linkedin-logo"
+                                                ><span class="label"
+                                                    >LinkedIn</span
+                                                ></a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2 data-translatekey="contact_title"></h2>
-							<p data-translatekey="contact_description"></p>
-							<div>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3 data-translatekey="contact_mail"></h3>
-											<!-- Verander dit adres naar het contact adres -->
-											<a href="mailto:didiervermunt@gmail.com" title="didiervermunt@gmail.com" class="ph ph-envelope-simple"> </a>
-										</li>
-										<li>
-											<h3 data-translatekey="contact_socials"></h3>
-											<ul class="icons">
-												<li><a href="https://twitter.com/didier_vermunt" target="_blank" rel="noreferrer" class="ph ph-twitter-logo"><span class="label">Twitter</span></a></li>
-												<li><a href="https://github.com/DidierVerNL" target="_blank" rel="noreferrer" class="ph ph-github-logo"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.linkedin.com/in/didier-vermunt-31895623a" target="_blank" rel="noreferrer" class="ph-fill ph-linkedin-logo"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+        <!-- Footer -->
+        <footer id="footer" class="wrapper style1-alt">
+            <div class="inner">
+                <ul class="menu">
+                    <li>&copy; DidierVermunt. All rights reserved.</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    <li>
+                        Font:
+                        <a href="https://fonts.google.com/specimen/REM"
+                            >Google Fonts</a
+                        >
+                    </li>
+                    <li>
+                        Icons: <a href="https://www.svgrepo.com/">SVGREPO</a> &
+                        <a href="https://fontawesome.com/">FontAwesome</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
 
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; DidierVermunt. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						<li>Font: <a href="https://fonts.google.com/specimen/REM">Google Fonts</a></li>
-						<li>Icons: <a href="https://www.svgrepo.com/">SVGREPO</a> & <a href="https://fontawesome.com/">FontAwesome</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/tinyi18n.js"></script>
-			<script> tinyi18n.loadTranslations('langs/translations.json')</script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/tinyi18n.js"></script>
+        <script>
+            tinyi18n.loadTranslations("langs/translations.json");
+        </script>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>

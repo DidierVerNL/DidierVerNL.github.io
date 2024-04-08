@@ -29,6 +29,42 @@ section, summary, time, mark, audio, video {
 	font-family: 'Montserrat-Medium';
 }
 
+.button-fill {
+	position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.button-fill:hover::before{
+	transform: scaleX(1);
+}
+.button-fill-content{
+	position:relative;
+	z-index: 1;
+}
+.button-fill::before{
+	content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
 
 .project-photos{
 	padding-top: 3px;
@@ -49,21 +85,26 @@ section, summary, time, mark, audio, video {
 }
 
 #imagesMain {
-	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
 
 }
+
+.imagebox-container {
+
+}
+
 .imagebox {
 	position: relative;
 	height: 250px;
 	width: 250px;
-	float: middle;
 	margin: 10px;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .imagebox img {
-	vertical-align: middle;
 	height: 250px;
 	width: 250px;
   }
@@ -80,18 +121,7 @@ section, summary, time, mark, audio, video {
 	bottom: 0;
 	transition: .5s ease;
 }
-.imagebox:hover .caption
-{
-	opacity: 0.8;
-	text-align:center;
-	color:#ffff7b;
-	font-size:20px;
-	font-weight:700;
-	font-family:"Montserrat-Medium";
-	padding-top: 20px;
-	padding-left: 5px;
-	padding-right: 5px;
-}
+
 
 .textoutline{
 	-webkit-text-stroke-width: 1px;
@@ -1977,7 +2007,6 @@ input, select, textarea {
 		font-weight: bold;
 		height: calc(4.75em + 2px);
 		letter-spacing: 0.25em;
-		line-height: 4.75em;
 		outline: 0;
 		padding: 0 3.75em;
 		position: relative;
