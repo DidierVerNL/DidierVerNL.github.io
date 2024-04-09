@@ -231,6 +231,11 @@ p + li {
     width: 600px;
 }
 
+#appmobileimage {
+    background-image: url("images/appmobilephoto.jpg");
+    background-size: cover;
+}
+
 #urgimage {
     background-image: url("images/urgphoto.png");
     background-size: cover;
@@ -3593,13 +3598,13 @@ table.alt tfoot {
 }
 
 .wrapper.style2-gradient-bl {
-    background-image: linear-gradient(to bottom left, #ffffff, #d9d9d9);
+    background-image: linear-gradient(to bottom left, #ffffff, #c6c6c6);
 }
 .wrapper.style2-alt-gradient-br {
-    background-image: linear-gradient(to bottom right, #d9d9d9, #ffffff);
+    background-image: linear-gradient(to bottom right, #c6c6c6, #ffffff);
 }
 .wrapper.style2-gradient-br {
-    background-image: linear-gradient(to bottom right, #d9d9d9, #ffffff);
+    background-image: linear-gradient(to bottom right, #c6c6c6, #ffffff);
 }
 
 .wrapper.fullscreen {

@@ -1,0 +1,248 @@
+<!doctype html>
+<!--
+    Hyperspace by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="nl">
+    <head>
+        <title>DidierVer Portfolio</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <link rel="stylesheet" href="assets/css/projects.css" />
+        <link rel="stylesheet" href="assets/css/github-dark-dimmed.min.css" />
+        <noscript
+            ><link rel="stylesheet" href="assets/css/noscript.css"
+        /></noscript>
+    </head>
+    <body class="is-preload">
+        <!-- Sidebar -->
+        <section id="sidebar">
+            <div class="inner">
+                <nav>
+                    <ul>
+                        <li>
+                            <a
+                                data-translatekey="sidebar_welcome"
+                                href="index.html#intro"
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                data-translatekey="sidebar_projects"
+                                href="index.html#one"
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                data-translatekey="sidebar_skills"
+                                href="index.html#two"
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                data-translatekey="sidebar_contact"
+                                href="index.html#three"
+                            ></a>
+                        </li>
+                    </ul>
+                    <button
+                        id="english"
+                        onclick="tinyi18n.setLang('en')"
+                    ></button>
+                    <button
+                        id="dutch"
+                        onclick="tinyi18n.setLang('nl')"
+                    ></button>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+            <!-- Intro -->
+            <section id="intro" class="wrapper style1 fade-up">
+                <div class="inner">
+                    <div id="appmobileimage" class="project-image"></div>
+                    <h1>Bon Appmobile</h1>
+                    <p class="big-text">
+                        Bon Appmobile is een VR kook simulator. Het doel van het
+                        spel is om pizza’s te bakken en te bezorgen bij de
+                        huizen. Je rijdt rond in een foodtruck in een grote
+                        wereld waarbij je zelf kan bepalen waar je heen gaat.
+                        Bak jij al rijdend de lekkerste pizza’s?
+                    </p>
+                </div>
+            </section>
+
+            <!-- Een -->
+            <section class="wrapper style1-gradient-br fade-up">
+                <div class="inner">
+                    <!-- Ik wil class="flex" hier hebben zodat het er mooier uitziet, maar door de flex gaat de text raar doen als ik het scherm van grootte verander-->
+                    <div class="flex">
+                        <div class="mr">
+                            <h2>Korte Info:</h2>
+                            <ul>
+                                <li>Gemaakt met: Unreal Engine 5</li>
+                                <li>Codeertaal: Blueprints</li>
+                                <li>Mijn rol: Project Lead, Developer</li>
+                                <li>
+                                    Tijdspan: 10 weken (waarvan 3 dagen per
+                                    week)
+                                </li>
+                            </ul>
+                            <h2>Team:</h2>
+                            <ul>
+                                <p><strong>Developers:</strong></p>
+                                <li>Akari Le (Project Lead)</li>
+                                <li>Bas Klaichid (Dev Lead)</li>
+                                <li>Bor Dekker</li>
+                                <li>Didier Vermunt (Project Lead)</li>
+                                <li>Ed Rikkert</li>
+                                <li>Matthijs van den Bovenkamp (Dev Lead)</li>
+                                <li>Miyaki Truong</li>
+                                <li>Nick van Luyk</li>
+                                <li>Nigel van Maanen</li>
+                                <p></p>
+                                <p><strong>Artist:</strong></p>
+                                <li>Camila Rijerse</li>
+                                <li>Darren Star</li>
+                                <li>Elroy‎‎‎ Kunst (Art Lead)</li>
+                                <li>Hugo Hugtenburg</li>
+                                <li>Levi Cok</li>
+                                <li>Rida Wullink</li>
+                                <li>Waylon Minck</li>
+                                <li>Zhahir Alkaf</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <iframe
+                                loading="lazy"
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/Kzzkh-GPVJ0?si=MxvNiwtWHXLpIu1R"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Twee -->
+            <section>
+                <section
+                    class="wrapper style2-gradient-bl fade-up center-items"
+                >
+                    <div class="inner">
+                        <div>
+                            <h2 class="text-black">Mijn Bijdragen:</h2>
+                            <div class="flex">
+                                <div>
+                                    <h3 class="text-black">
+                                        Pathing Framework:
+                                    </h3>
+                                    <p class="small-text text-black">
+                                        De speler moet kunnen rond rijden door
+                                        de map, dit doen we door middel van een
+                                        spline, of beter gezegd, meerdere
+                                        splines. Hier laat ik de code zien hoe
+                                        we dit gemaakt hebben.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section
+                    class="wrapper style2-alt-gradient-br fade-up center-items"
+                >
+                    <div class="inner">
+                        <div class="flex">
+                            <div>
+                                <h3 class="text-black">De gehele blueprint</h3>
+                                <p class="small-text text-black">
+                                    Dit is de gehele blueprint, hierin wordt de
+                                    auto geplaats op de spline waar we mee
+                                    willen starten, dan naar maten van hoe ver
+                                    de auto is op de spline checken we of de
+                                    auto een bocht wilt nemen. Als de auto dan
+                                    op een splitsing komt, kiest de auto ervoor
+                                    om de bocht te nemen. Dit is voor elke
+                                    splitsing hetzelfde. Elke splitsing heeft
+                                    ook een "rechtdoor" kant, dit is puur de weg
+                                    die de auto zal nemen als er geen kant
+                                    gekozen is.
+                                </p>
+                                <iframe
+                                    loading="lazy"
+                                    src="https://player.vimeo.com/video/932409692?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                    width="640"
+                                    height="360"
+                                    frameborder="0"
+                                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                                    title="New spline code"
+                                ></iframe>
+                            </div>
+
+                            <div class="ml">
+                                <iframe
+                                    loading="lazy"
+                                    width="650"
+                                    height="650"
+                                    src="https://blueprintue.com/render/l4u0h4eg/"
+                                    scrolling="no"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer" class="wrapper style1-alt">
+            <div class="inner">
+                <ul class="menu">
+                    <li>&copy; DidierVermunt. All rights reserved.</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    <li>
+                        Font:
+                        <a href="https://fonts.google.com/specimen/REM"
+                            >Google Fonts</a
+                        >
+                    </li>
+                    <li>
+                        Icons: <a href="https://www.svgrepo.com/">SVGREPO</a> &
+                        <a href="https://fontawesome.com/">FontAwesome</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+
+        <script src="assets/js/highlight.min.js"></script>
+        <script src="assets/js/csharp.min.js"></script>
+        <script src="assets/js/tinyi18n.js"></script>
+        <script>
+            tinyi18n.loadTranslations("langs/translations.json");
+        </script>
+        <script>
+            hljs.initHighlightingOnLoad();
+        </script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
