@@ -1,3 +1,7 @@
+This is my Portfolio page, beneath this will be some credits and licence information
+
+------------------------------
+
 Hyperspace by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -25,7 +29,7 @@ Credits:
 		Unsplash (unsplash.com)
 
 	Icons:
-		Font Awesome (fontawesome.io)
+		Phosphor Icons (https://phosphoricons.com/)
 
 	Other:
 		jQuery (jquery.com)
