@@ -22,15 +22,15 @@
       "en": "In this virtual reality game, your job is to knock down the drones to the beat of the music. Choose from a diverse selection of songs from easy to difficult and get the highest score.",
       "nl": "In deze virtueel reality game is het jouw taak om de drones neer te slaan op de beat van de muziek. Kies uit een gevarieerde selectie van liedjes van makkelijk tot moeilijk en krijg de hoogste score."
     },
-    "urg_info_title": {
+    "info_title": {
       "en": "Brief info:",
       "nl": "Korte info:"
     },
-    "urg_info_create": {
+    "ue5_info_create": {
       "en": "Created with: Unreal Engine 5",
       "nl": "Gemaakt met: Unreal Engine 5"
     },
-    "urg_info_coding": {
+    "blueprints_info_coding": {
       "en": "Coding language: Blueprints",
       "nl": "Codeertaal: Blueprints"
     },
@@ -38,11 +38,11 @@
       "en": "My role: Creative Lead, Developer",
       "nl": "Mijn rol: Creative Lead, Developer"
     },
-    "urg_info_time": {
+    "hlo_info_time": {
       "en": "Time spent: 10 weeks (3 days per week)",
       "nl": "Tijdspan: 10 weken (waarvan 3 dagen per week)"
     },
-    "urg_cont_title": {
+    "cont_title": {
       "en": "My contributions:",
       "nl": "Mijn bijdragen:"
     },
@@ -61,6 +61,26 @@
     "urg_cont_death_description": {
       "en": "Of course, the player must also be able to lose. If the player misses drones his hands get redder and redder and eventually the player loses. The drones fall and you are shown 2 blocks, try again or return to the start menu.",
       "nl": "De speler moet natuurlijk ook af kunnen gaan. Als de speler drones mist worden zijn handen steeds roder en uiteindelijk verliest de speler. De drones vallen en je krijgt 2 blokjes te zien, opnieuw proberen of terug naar het start menu. "
+    },
+    "app_description": {
+      "en": "Bon Appmobile is a VR cooking simulator. The goal of the game is to bake pizzas and deliver them to homes. You drive around in a food truck in a big world where you can decide where to go. Will you bake the tastiest pizzas while driving?:",
+      "nl": "Bon Appmobile is een VR kook simulator. Het doel van het spel is om pizza’s te bakken en te bezorgen bij de huizen. Je rijdt rond in een foodtruck in een grote wereld waarbij je zelf kan bepalen waar je heen gaat. Bak jij al rijdend de lekkerste pizza’s?:"
+    },
+    "app_info_role": {
+      "en": "My role: Project Lead, Developer",
+      "nl": "Mijn rol: Project Lead, Developer"
+    },
+    "app_cont_path_description": {
+      "en": "The player should be able to drive around the map, we do this through a spline, or rather, multiple splines. Here I'll show you the code we used to get this result",
+      "nl": "De speler moet kunnen rond rijden door de map, dit doen we door middel van een spline, of beter gezegd, meerdere splines. Hier laat ik de code zien die we gebruikt hebben om dit resultaat te krijgen"
+    },
+    "app_cont_blueprint_title": {
+      "en": "The entire blueprint",
+      "nl": "De gehele blueprint"
+    },
+    "app_cont_blueprint_description": {
+      "en": "This is the whole blueprint, in which the car is placed on the spline we want to start with, then by measures of how far the car is on the spline we check if the car wants to take a turn. Then when the car comes to a fork, the car chooses to take the turn. This is the same for each spline. Each fork also has a 'straight through' side, this is purely the path the car will take if no side is chosen.",
+      "nl": "Dit is de gehele blueprint, hierin wordt de auto geplaats op de spline waar we mee willen starten, dan naar maten van hoe ver de auto is op de spline checken we of de auto een bocht wilt nemen. Als de auto dan op een splitsing komt, kiest de auto ervoor om de bocht te nemen. Dit is voor elke splitsing hetzelfde. Elke splitsing heeft ook een 'rechtdoor' kant, dit is puur de weg die de auto zal nemen als er geen kant gekozen is."
     }
   }
 }
