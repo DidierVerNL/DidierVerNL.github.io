@@ -1,0 +1,66 @@
+{
+  "default_language": "en",
+  "languages": ["en", "nl"],
+  "translations": {
+    "sidebar_welcome": {
+      "en": "WELCOME",
+      "nl": "WELKOM"
+    },
+    "sidebar_projects": {
+      "en": "MY PROJECTS",
+      "nl": "MIJN PROJECTEN"
+    },
+    "sidebar_skills": {
+      "en": "SKILLS",
+      "nl": "SKILLS"
+    },
+    "sidebar_contact": {
+      "en": "CONTACT",
+      "nl": "CONTACT"
+    },
+    "urg_description": {
+      "en": "In this virtual reality game, your job is to knock down the drones to the beat of the music. Choose from a diverse selection of songs from easy to difficult and get the highest score.",
+      "nl": "In deze virtueel reality game is het jouw taak om de drones neer te slaan op de beat van de muziek. Kies uit een gevarieerde selectie van liedjes van makkelijk tot moeilijk en krijg de hoogste score."
+    },
+    "urg_info_title": {
+      "en": "Brief info:",
+      "nl": "Korte info:"
+    },
+    "urg_info_create": {
+      "en": "Created with: Unreal Engine 5",
+      "nl": "Gemaakt met: Unreal Engine 5"
+    },
+    "urg_info_coding": {
+      "en": "Coding language: Blueprints",
+      "nl": "Codeertaal: Blueprints"
+    },
+    "urg_info_role": {
+      "en": "My role: Creative Lead, Developer",
+      "nl": "Mijn rol: Creative Lead, Developer"
+    },
+    "urg_info_time": {
+      "en": "Time spent: 10 weeks (3 days per week)",
+      "nl": "Tijdspan: 10 weken (waarvan 3 dagen per week)"
+    },
+    "urg_cont_title": {
+      "en": "My contributions:",
+      "nl": "Mijn bijdragen:"
+    },
+    "urg_cont_velocity_title": {
+      "en": "Calculating Velocity",
+      "nl": "Velocity Berekening"
+    },
+    "urg_cont_velocity_description": {
+      "en": "The player must smash the blocks, but this may only happen if the player hits hard enough. Otherwise, he can also just keep his hands still and still get points. For this I worked (together with 2 other devs) on a calculation for how fast the hands move",
+      "nl": "De speler moet de blokken kapot slaan, maar dit mag alleen gebeuren als de speler hard genoeg slaat. Anders kan hij ook gewoon zijn handen stil houden en nog steeds punten krijgen. Hiervoor heb ik gewerkt (Samen met 2 andere dev's) aan een berekening voor hoe snel de handen bewegen"
+    },
+    "urg_cont_spline_description": {
+      "en": "The Drones follow a Spline Component to get to the player. This is a line that you can bend and stretch to whatever position you want. The drones then calculate how long the line is and then calculate how fast the drones have to move to (at whatever length) always follow the line at the same speed.",
+      "nl": "De Drones volgen een Spline Component om naar de speler te gaan. Dit is een lijn die je kan buigen en strekken naar welke positie je maar wilt. De drones berekenen daarna hoelang de lijn is en berekenen daarna hoe snel de drones moeten bewegen om (met welke lengte dan ook) altijd even snel de lijn te volgen. "
+    },
+    "urg_cont_death_description": {
+      "en": "Of course, the player must also be able to lose. If the player misses drones his hands get redder and redder and eventually the player loses. The drones fall and you are shown 2 blocks, try again or return to the start menu.",
+      "nl": "De speler moet natuurlijk ook af kunnen gaan. Als de speler drones mist worden zijn handen steeds roder en uiteindelijk verliest de speler. De drones vallen en je krijgt 2 blokjes te zien, opnieuw proberen of terug naar het start menu. "
+    }
+  }
+}

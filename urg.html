@@ -68,12 +68,7 @@
                 <div class="inner">
                     <div id="urgimage" class="project-image"></div>
                     <h1>Untitled Rythm Game (URG)</h1>
-                    <p class="big-text">
-                        In deze virtueel reality game is het jouw taak om de
-                        drones neer te slaan op de beat van de muziek. Kies uit
-                        een gevarieerde selectie van liedjes van makkelijk tot
-                        moeilijk en krijg de hoogste score.
-                    </p>
+                    <p class="big-text" data-translatekey="urg_description"></p>
                 </div>
             </section>
 
@@ -83,15 +78,12 @@
                     <!-- Ik wil class="flex" hier hebben zodat het er mooier uitziet, maar door de flex gaat de text raar doen als ik het scherm van grootte verander-->
                     <div class="flex">
                         <div class="mr">
-                            <h2>Korte Info:</h2>
+                            <h2 data-translatekey="urg_info_title"></h2>
                             <ul>
-                                <li>Gemaakt met: Unreal Engine 5</li>
-                                <li>Codeertaal: Blueprints</li>
-                                <li>Mijn rol: Creative Lead, Developer</li>
-                                <li>
-                                    Tijdspan: 10 weken (waarvan 3 dagen per
-                                    week)
-                                </li>
+                                <li data-translatekey="urg_info_create"></li>
+                                <li data-translatekey="urg_info_coding"></li>
+                                <li data-translatekey="urg_info_role"></li>
+                                <li data-translatekey="urg_info_time"></li>
                             </ul>
                             <h2>Team:</h2>
                             <ul>
@@ -131,22 +123,20 @@
                 >
                     <div class="inner">
                         <div>
-                            <h2 class="text-black">Mijn Bijdragen:</h2>
+                            <h2
+                                class="text-black"
+                                data-translatekey="urg_cont_title"
+                            ></h2>
                             <div class="flex">
                                 <div>
-                                    <h3 class="text-black">
-                                        Velocity Berekening:
-                                    </h3>
-                                    <p class="small-text text-black">
-                                        De speler moet de blokken kapot slaan,
-                                        maar dit mag alleen gebeuren als de
-                                        speler hard genoeg slaat. Anders kan hij
-                                        ook gewoon zijn handen stil houden en
-                                        nogsteeds punten krijgen. Hiervoor heb
-                                        ik gewerkt (Samen met 2 andere dev's)
-                                        aan een berekening voor hoe snel de
-                                        handen bewegen
-                                    </p>
+                                    <h3
+                                        class="text-black"
+                                        data-translatekey="urg_cont_velocity_title"
+                                    ></h3>
+                                    <p
+                                        class="small-text text-black"
+                                        data-translatekey="urg_cont_velocity_description"
+                                    ></p>
                                     <div class="mr" id="urgvelocity"></div>
                                 </div>
                                 <div>
@@ -180,16 +170,10 @@
                             </div>
                             <div>
                                 <h3 class="text-black">Spline Components:</h3>
-                                <p class="small-text text-black">
-                                    De Drones volgen een "Spline Component" om
-                                    naar de speler te gaan. Dit is een lijn die
-                                    je kan buigen en strekken naar welke positie
-                                    je maar wilt. De drones berekenen daarna
-                                    hoelang de lijn is en berekenen daarna hoe
-                                    snel de drones moeten bewegen om (met welke
-                                    lengte dan ook) altijd even snel de lijn te
-                                    volgen.
-                                </p>
+                                <p
+                                    class="small-text text-black"
+                                    data-translatekey="urg_cont_spline_description"
+                                ></p>
                                 <div id="urgspline"></div>
                                 <p></p>
                                 <div id="urgsplinephoto"></div>
@@ -204,14 +188,10 @@
                         <div class="flex">
                             <div>
                                 <h3 class="text-black">Death Event:</h3>
-                                <p class="small-text text-black">
-                                    De speler moet natuurlijk ook af kunnen
-                                    gaan. Als de speler drones mist worden zijn
-                                    handen steeds roder en uiteindelijk verliest
-                                    de speler. De drones vallen en je krijgt 2
-                                    blokjes te zien, opnieuw proberen of terug
-                                    naar het start menu.
-                                </p>
+                                <p
+                                    class="small-text text-black"
+                                    data-translatekey="urg_cont_death_description"
+                                ></p>
                                 <div
                                     class="mr lazyload-gif"
                                     data-src="assets/css/images/URG_Death.gif"
@@ -275,7 +255,7 @@
         <script src="assets/js/csharp.min.js"></script>
         <script src="assets/js/tinyi18n.js"></script>
         <script>
-            tinyi18n.loadTranslations("langs/translations.json");
+            tinyi18n.loadTranslations("langs/translations_projects.json");
         </script>
         <script>
             hljs.initHighlightingOnLoad();
