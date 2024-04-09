@@ -1,106 +1,130 @@
 {
-	"default_language": "en",
-	"languages": ["en", "nl"],
-	"translations": {
-		"sidebar_welcome": {
-			"en": "WELCOME",
-			"nl": "WELKOM"
-		},
-		"sidebar_projects": {
-			"en": "MY PROJECTS",
-			"nl": "MIJN PROJECTEN"
-		},
-		"sidebar_skills": {
-			"en": "SKILLS",
-			"nl": "SKILLS"
-		},
-		"sidebar_contact": {
-			"en": "CONTACT",
-			"nl": "CONTACT"
-		},
-		"description": {
-			"en": "19 years old, living in Etten-Leur, studying Game Development at Grafisch Lyceum Utrecht. I am a real team player! I have a creative mind and way of working, good perseverance and I am very driven!",
-			"nl": "19 jaar oud, woonachtig in Etten-Leur, opleiding Game Development op het Grafisch Lyceum Utrecht. Ik ben een echte teamplayer! Ik heb een creatieve gedachte en werkwijze, een goed doorzettingsvermogen en ik ben heel gedreven!"
-		},
-		"skills_coding_title": {
-			"en": "Coding skills",
-			"nl": "Coding skills"
-		},
-		"skills_coding_unity": {
-			"en": "Unity 2D & 3D (PC, Mobile, VR)",
-			"nl": "Unity 2D & 3D (PC, Mobiel, VR)"
-		},
-		"skills_coding_unreal": {
-			"en": "Unreal Blueprints (PC, VR)",
-			"nl": "Unreal Blueprints (PC, VR)"
-		},
-		"skills_agile_title": {
-			"en": "Working agile",
-			"nl": "Agile werken"
-		},
-		"skills_agile_scrum": {
-			"en": "Scrum framework",
-			"nl": "Scrum framework"
-		},
-		"skills_agile_stand": {
-			"en": "Stand-ups, Stand-downs",
-			"nl": "Stand-ups, Stand-downs"
-		},
-		"skills_agile_review": {
-			"en": "Reviews, Retrospectives",
-			"nl": "Reviews, Retrospectives"
-		},
-		"skills_version_control_title": {
-			"en": "Version control",
-			"nl": "Versiebeheer"
-		},
-		"skills_version_control_github": {
-			"en": "Github",
-			"nl": "Github"
-		},
-		"skills_version_control_gitlab": {
-			"en": "Gitlab",
-			"nl": "Gitlab"
-		},
-		"skills_version_control_perforce": {
-			"en": "Perforce",
-			"nl": "Perforce"
-		},
-		"skills_extra_skills_title": {
-			"en": "Extra skills",
-			"nl": "Extra skills"
-		},
-		"skills_extra_skills_solid": {
-			"en": "S.O.L.I.D. programming",
-			"nl": "S.O.L.I.D. programmeren"
-		},
-		"skills_extra_skills_oop": {
-			"en": "Object Oriënted Programming (OOP)",
-			"nl": "Object Oriënted Programming (OOP)"
-		},
-		"skills_extra_skills_html_css": {
-			"en": "Basics HTML & CSS",
-			"nl": "Basis HTML & CSS"
-		},
-		"skills_extra_skills_paint": {
-			"en": "PAINT.NET",
-			"nl": "PAINT.NET"
-		},
-		"contact_title": {
-			"en": "Contact me!",
-			"nl": "Contacteer mij!"
-		},
-		"contact_description": {
-			"en": "Would you like to contact me to share ideas, projects or questions. If so, please do!",
-			"nl": "Wilt u mij contacteren om ideeën, projecten of vragen te delen. Dan kan dat!"
-		},
-		"contact_mail": {
-			"en": "Email",
-			"nl": "Email"
-		},
-		"contact_socials": {
-			"en": "Socials",
-			"nl": "Sociale media"
-		}
-	}
+  "default_language": "en",
+  "languages": ["en", "nl"],
+  "translations": {
+    "sidebar_welcome": {
+      "en": "WELCOME",
+      "nl": "WELKOM"
+    },
+    "sidebar_projects": {
+      "en": "MY PROJECTS",
+      "nl": "MIJN PROJECTEN"
+    },
+    "sidebar_skills": {
+      "en": "SKILLS",
+      "nl": "SKILLS"
+    },
+    "sidebar_contact": {
+      "en": "CONTACT",
+      "nl": "CONTACT"
+    },
+    "description": {
+      "en": "19 years old, living in Etten-Leur, studying Game Development at Grafisch Lyceum Utrecht. I am a real team player! I have a creative mind and way of working, good perseverance and I am very driven!",
+      "nl": "19 jaar oud, woonachtig in Etten-Leur, opleiding Game Development op het Grafisch Lyceum Utrecht. Ik ben een echte teamplayer! Ik heb een creatieve gedachte en werkwijze, een goed doorzettingsvermogen en ik ben heel gedreven!"
+    },
+    "skills_coding_title": {
+      "en": "Coding skills",
+      "nl": "Coding skills"
+    },
+    "skills_coding_unity": {
+      "en": "Unity 2D & 3D (PC, Mobile, VR)",
+      "nl": "Unity 2D & 3D (PC, Mobiel, VR)"
+    },
+    "skills_coding_unreal": {
+      "en": "Unreal Blueprints (PC, VR)",
+      "nl": "Unreal Blueprints (PC, VR)"
+    },
+    "skills_agile_title": {
+      "en": "Working agile",
+      "nl": "Agile werken"
+    },
+    "skills_agile_scrum": {
+      "en": "Scrum framework",
+      "nl": "Scrum framework"
+    },
+    "skills_agile_stand": {
+      "en": "Stand-ups, Stand-downs",
+      "nl": "Stand-ups, Stand-downs"
+    },
+    "skills_agile_review": {
+      "en": "Reviews, Retrospectives",
+      "nl": "Reviews, Retrospectives"
+    },
+    "skills_version_control_title": {
+      "en": "Version control",
+      "nl": "Versiebeheer"
+    },
+    "skills_version_control_github": {
+      "en": "Github",
+      "nl": "Github"
+    },
+    "skills_version_control_gitlab": {
+      "en": "Gitlab",
+      "nl": "Gitlab"
+    },
+    "skills_version_control_perforce": {
+      "en": "Perforce",
+      "nl": "Perforce"
+    },
+    "skills_extra_skills_title": {
+      "en": "Extra skills",
+      "nl": "Extra skills"
+    },
+    "skills_extra_skills_solid": {
+      "en": "S.O.L.I.D. programming",
+      "nl": "S.O.L.I.D. programmeren"
+    },
+    "skills_extra_skills_oop": {
+      "en": "Object Oriënted Programming (OOP)",
+      "nl": "Object Oriënted Programming (OOP)"
+    },
+    "skills_extra_skills_html_css": {
+      "en": "Basics HTML & CSS",
+      "nl": "Basis HTML & CSS"
+    },
+    "skills_extra_skills_paint": {
+      "en": "PAINT.NET",
+      "nl": "PAINT.NET"
+    },
+    "contact_title": {
+      "en": "Contact me!",
+      "nl": "Contacteer mij!"
+    },
+    "contact_description": {
+      "en": "Would you like to contact me to share ideas, projects or questions. If so, please do!",
+      "nl": "Wilt u mij contacteren om ideeën, projecten of vragen te delen. Dan kan dat!"
+    },
+    "contact_mail": {
+      "en": "Email",
+      "nl": "Email"
+    },
+    "contact_socials": {
+      "en": "Socials",
+      "nl": "Sociale media"
+    },
+    "projects_title": {
+      "en": "My projects",
+      "nl": "Mijn projecten"
+    },
+    "projects_urg_title": {
+      "en": "Untitled Rhythm Game (URG)",
+      "nl": "Untitled Rhythm Game (URG)"
+    },
+    "projects_urg_description": {
+      "en": "URG is a vr game where you have to smash drones with your hands to the beat of the music. With different songs, there is something for everyone.",
+      "nl": "URG is een vr spel waarbij je op de maat van de muziek drones kapot moet slaan met je handen. Met verschillende liedjes is er voor elk wat wils."
+    },
+    "projects_appmobile_title": {
+      "en": "Bon Appmobile",
+      "nl": "Bon Appmobile"
+    },
+    "projects_appmobile_description": {
+      "en": "Bon Appmobile is a VR cooking simulator. The goal of the game is to bake pizzas and deliver them to homes. You drive around in a food truck in a big world where you can decide where to go. Will you bake the tastiest pizzas while driving?",
+      "nl": "Bon Appmobile is een VR kook simulator. Het doel van het spel is om pizza’s te bakken en te bezorgen bij de huizen. Je rijdt rond in een foodtruck in een grote wereld waarbij je zelf kan bepalen waar je heen gaat. Bak jij al rijdend de lekkerste pizza’s?"
+    },
+    "button_read_more": {
+      "en": "Read more",
+      "nl": "Lees meer"
+    }
+  }
 }
