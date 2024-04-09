@@ -47,8 +47,8 @@
       "nl": "Mijn bijdragen:"
     },
     "urg_cont_velocity_title": {
-      "en": "Calculating Velocity",
-      "nl": "Velocity Berekening"
+      "en": "Calculating Velocity:",
+      "nl": "Velocity Berekening:"
     },
     "urg_cont_velocity_description": {
       "en": "The player must smash the blocks, but this may only happen if the player hits hard enough. Otherwise, he can also just keep his hands still and still get points. For this I worked (together with 2 other devs) on a calculation for how fast the hands move",
