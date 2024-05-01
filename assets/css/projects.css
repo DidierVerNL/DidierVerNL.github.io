@@ -236,6 +236,11 @@ p + li {
     background-size: cover;
 }
 
+#arcadeimage {
+    background-image: url("images/arcadephoto.jpg");
+    background-size: cover;
+}
+
 #urgimage {
     background-image: url("images/urgphoto.png");
     background-size: cover;

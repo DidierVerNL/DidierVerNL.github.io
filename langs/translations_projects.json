@@ -30,6 +30,10 @@
       "en": "Created with: Unreal Engine 5",
       "nl": "Gemaakt met: Unreal Engine 5"
     },
+    "asp_info_coding": {
+      "en": "Created with: ASP.NET",
+      "nl": "Gemaakt met: ASP.NET"
+    },
     "blueprints_info_coding": {
       "en": "Coding language: Blueprints",
       "nl": "Codeertaal: Blueprints"
@@ -81,6 +85,10 @@
     "app_cont_blueprint_description": {
       "en": "This is the whole blueprint, in which the car is placed on the spline we want to start with, then by measures of how far the car is on the spline we check if the car wants to take a turn. Then when the car comes to a fork, the car chooses to take the turn. This is the same for each spline. Each fork also has a 'straight through' side, this is purely the path the car will take if no side is chosen.",
       "nl": "Dit is de gehele blueprint, hierin wordt de auto geplaats op de spline waar we mee willen starten, dan naar maten van hoe ver de auto is op de spline checken we of de auto een bocht wilt nemen. Als de auto dan op een splitsing komt, kiest de auto ervoor om de bocht te nemen. Dit is voor elke splitsing hetzelfde. Elke splitsing heeft ook een 'rechtdoor' kant, dit is puur de weg die de auto zal nemen als er geen kant gekozen is."
+    },
+    "arcade_description": {
+      "en": "For the Gamelab at the Grafisch Lyceum Utrecht, me and fellow student Justin van Diggelen built an arcade cabinet for students to create and play games for.",
+      "nl": "Voor het Gamelab op het Grafisch Lyceum Utrecht hebben ik en mede student Justin van Diggelen een arcade kast gebouwd waar studenten spelen voor kunnen maken en spelen."
     }
   }
 }
