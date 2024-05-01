@@ -89,6 +89,10 @@
     "arcade_description": {
       "en": "For the Gamelab at the Grafisch Lyceum Utrecht, me and fellow student Justin van Diggelen built an arcade cabinet for students to create and play games for.",
       "nl": "Voor het Gamelab op het Grafisch Lyceum Utrecht hebben ik en mede student Justin van Diggelen een arcade kast gebouwd waar studenten spelen voor kunnen maken en spelen."
+    },
+    "arcade_info_role": {
+      "en": "My role: Front-end",
+      "nl": "Mijn rol: Front-end"
     }
   }
 }
