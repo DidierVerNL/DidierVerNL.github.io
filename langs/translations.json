@@ -1,5 +1,5 @@
 {
-  "default_language": "en",
+  "default_language": "nl",
   "languages": ["en", "nl"],
   "translations": {
     "sidebar_welcome": {
@@ -121,6 +121,14 @@
     "projects_appmobile_description": {
       "en": "Bon Appmobile is a VR cooking simulator. The goal of the game is to bake pizzas and deliver them to homes. You drive around in a food truck in a big world where you can decide where to go. Will you bake the tastiest pizzas while driving?",
       "nl": "Bon Appmobile is een VR kook simulator. Het doel van het spel is om pizza’s te bakken en te bezorgen bij de huizen. Je rijdt rond in een foodtruck in een grote wereld waarbij je zelf kan bepalen waar je heen gaat. Bak jij al rijdend de lekkerste pizza’s?"
+    },
+    "projects_arcade_title": {
+      "en": "Gamelab Arcade Machine",
+      "nl": "Gamelab Arcade Machine"
+    },
+    "projects_arcade_description": {
+      "en": "For my school me and another student built an arcade cabinet for our schools Gamelab, for this arcade cabinet I did the frontend of the menu",
+      "nl": "Voor mijn school hebben ik en een andere student een arcade kast gebouwd voor het Gamelab, voor deze arcade kast heb ik de frontend gedaan van het menu"
     },
     "button_read_more": {
       "en": "Read more",

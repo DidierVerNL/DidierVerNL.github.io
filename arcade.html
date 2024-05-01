@@ -1,0 +1,270 @@
+<!doctype html>
+<!--
+    Hyperspace by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="nl">
+    <head>
+        <title>DidierVer Portfolio</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <link rel="stylesheet" href="assets/css/projects.css" />
+        <link rel="stylesheet" href="assets/css/github-dark-dimmed.min.css" />
+        <noscript
+            ><link rel="stylesheet" href="assets/css/noscript.css"
+        /></noscript>
+    </head>
+    <body class="is-preload">
+        <!-- Sidebar -->
+        <section id="sidebar">
+            <div class="inner">
+                <nav>
+                    <ul>
+                        <li>
+                            <a
+                                data-translatekey="sidebar_welcome"
+                                href="index.html#intro"
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                data-translatekey="sidebar_projects"
+                                href="index.html#one"
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                data-translatekey="sidebar_skills"
+                                href="index.html#two"
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                data-translatekey="sidebar_contact"
+                                href="index.html#three"
+                            ></a>
+                        </li>
+                    </ul>
+                    <!--
+                    <button
+                        id="english"
+                        onclick="tinyi18n.setLang('en')"
+                    ></button>
+                    <button
+                        id="dutch"
+                        onclick="tinyi18n.setLang('nl')"
+                    ></button>
+                    -->
+                </nav>
+            </div>
+        </section>
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+            <!-- Intro -->
+            <section id="intro" class="wrapper style1">
+                <div class="inner">
+                    <div id="urgimage" class="project-image"></div>
+                    <h1>Arcade Machine</h1>
+                    <p class="big-text" data-translatekey="urg_description"></p>
+                </div>
+            </section>
+
+            <!-- Een -->
+            <section class="wrapper style1-gradient-br fade-up">
+                <div class="inner">
+                    <!-- Ik wil class="flex" hier hebben zodat het er mooier uitziet, maar door de flex gaat de text raar doen als ik het scherm van grootte verander-->
+                    <div class="flex">
+                        <div class="mr">
+                            <h2 data-translatekey="info_title"></h2>
+                            <ul>
+                                <li data-translatekey="ue5_info_create"></li>
+                                <li
+                                    data-translatekey="blueprints_info_coding"
+                                ></li>
+                                <li data-translatekey="urg_info_role"></li>
+                                <li data-translatekey="hlo_info_time"></li>
+                            </ul>
+                            <h2>Team:</h2>
+                            <p><strong>Developers:</strong></p>
+                            <ul>
+                                <li>Akari Le</li>
+                                <li>Aria Fadaei</li>
+                                <li>Didier Vermunt</li>
+                                <li>Kishan Vogelaar</li>
+                                <li>Matthijs van den Bovenkamp</li>
+                                <li>Miyaki Truong</li>
+                            </ul>
+                            <p><strong>Artist:</strong></p>
+                            <ul>
+                                <li>Lara Gommers</li>
+                                <li>Levi Cok</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <iframe
+                                loading="lazy"
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/4YdOkJ1ZWn8?si=qJ0dbdSpnqiAxCz6"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Twee -->
+            <section>
+                <section
+                    class="wrapper style2-gradient-bl fade-up center-items"
+                >
+                    <div class="inner">
+                        <div>
+                            <h2
+                                class="text-black"
+                                data-translatekey="cont_title"
+                            ></h2>
+                            <div class="flex">
+                                <div>
+                                    <h3
+                                        class="text-black"
+                                        data-translatekey="urg_cont_velocity_title"
+                                    ></h3>
+                                    <p
+                                        class="small-text text-black"
+                                        data-translatekey="urg_cont_velocity_description"
+                                    ></p>
+                                    <div class="mr" id="urgvelocity"></div>
+                                </div>
+                                <div>
+                                    <iframe
+                                        loading="lazy"
+                                        width="650"
+                                        height="650"
+                                        src="https://blueprintue.com/render/x1949ha5/"
+                                        scrolling="no"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section
+                    class="wrapper style2-alt-gradient-br fade-up center-items"
+                >
+                    <div class="inner">
+                        <div class="flex">
+                            <div class="mr">
+                                <iframe
+                                    loading="lazy"
+                                    width="650"
+                                    height="650"
+                                    src="https://blueprintue.com/render/nzgolctw/"
+                                    scrolling="no"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                            <div>
+                                <h3 class="text-black">Spline Components:</h3>
+                                <p
+                                    class="small-text text-black"
+                                    data-translatekey="urg_cont_spline_description"
+                                ></p>
+                                <div id="urgspline"></div>
+                                <p></p>
+                                <div id="urgsplinephoto"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section
+                    class="wrapper style2-gradient-bl fade-up center-items"
+                >
+                    <div class="inner">
+                        <div class="flex">
+                            <div>
+                                <h3 class="text-black">Death Event:</h3>
+                                <p
+                                    class="small-text text-black"
+                                    data-translatekey="urg_cont_death_description"
+                                ></p>
+                                <div
+                                    class="mr lazyload-gif"
+                                    data-src="assets/css/images/URG_Death.gif"
+                                ></div>
+                            </div>
+                            <div class="mr">
+                                <iframe
+                                    loading="lazy"
+                                    width="400"
+                                    height="650"
+                                    src="https://blueprintue.com/render/durmmu_d/"
+                                    scrolling="no"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                            <div>
+                                <iframe
+                                    loading="lazy"
+                                    width="400"
+                                    height="650"
+                                    src="https://blueprintue.com/render/lga7tc53/"
+                                    scrolling="no"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer" class="wrapper style1-alt">
+            <div class="inner">
+                <ul class="menu">
+                    <li>&copy; DidierVermunt. All rights reserved.</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    <li>
+                        Font:
+                        <a href="https://fonts.google.com/specimen/REM"
+                            >Google Fonts</a
+                        >
+                    </li>
+                    <li>
+                        Icons: <a href="https://www.svgrepo.com/">SVGREPO</a> &
+                        <a href="https://fontawesome.com/">FontAwesome</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+
+        <script src="assets/js/highlight.min.js"></script>
+        <script src="assets/js/csharp.min.js"></script>
+        <script src="assets/js/tinyi18n.js"></script>
+        <script>
+            tinyi18n.loadTranslations("langs/translations_projects.json");
+        </script>
+        <script>
+            hljs.initHighlightingOnLoad();
+        </script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
