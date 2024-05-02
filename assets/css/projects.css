@@ -240,6 +240,10 @@ p + li {
     background-image: url("images/arcadephoto.jpg");
     background-size: cover;
 }
+#arcadeexample {
+    background-image: url("images/Arcade_exampleui.png");
+    background-size: cover;
+}
 
 #urgimage {
     background-image: url("images/urgphoto.png");

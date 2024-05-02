@@ -93,6 +93,14 @@
     "arcade_info_role": {
       "en": "My role: Front-end",
       "nl": "Mijn rol: Front-end"
+    },
+    "arcade_frontend_title": {
+      "en": "The UI",
+      "nl": "De UI"
+    },
+    "arcade_frontend_description": {
+      "en": "For the arcade cabinet, I put together the user interface for the menu to choose games from, this consists of a start screen, then to an area with rows of games (students can put these up themselves), and an info area that says what game it is, who made it and other useful info.",
+      "nl": "Voor de arcade kast heb ik de user interface in elkaar gezet voor het menu om spellen uit te kiezen, dit bestaat uit een start scherm, dan naar een gebied met rijen aan spellen (deze kunnen studenten er zelf opzetten), en een info gebied waar staat welk spel het is, wie het hebben gemaakt en andere nuttige info."
     }
   }
 }
