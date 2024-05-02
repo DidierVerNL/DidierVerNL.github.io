@@ -243,6 +243,8 @@ p + li {
 #arcadeexample {
     background-image: url("images/Arcade_exampleui.png");
     background-size: cover;
+    width: 1500px;
+    height: 225px;
 }
 
 #urgimage {
