@@ -130,6 +130,14 @@
       "en": "For my school me and another student built an arcade cabinet for our schools Gamelab, for this arcade cabinet I did the frontend of the menu",
       "nl": "Voor mijn school hebben ik en een andere student een arcade kast gebouwd voor het Gamelab, voor deze arcade kast heb ik de frontend gedaan van het menu"
     },
+    "projects_spacetrip_title": {
+      "en": "Spacetrip",
+      "nl": "Spacetrip"
+    },
+    "projects_spacetrip_description": {
+      "en": "This is a single player racing game that takes place on an alien planet. Can you get the fastest score?",
+      "nl": "Dit is een single player race spel dat zich plaatst vind op een vreemde planeet. Kan jij de snelste score halen?"
+    },
     "button_read_more": {
       "en": "Read more",
       "nl": "Lees meer"
